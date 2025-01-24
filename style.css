@@ -1,0 +1,111 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f1d5d5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 15px ;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.user-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.user-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #218838;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.user-list li {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 80%;
+      padding: 10px 15px ;
+    }
+
+    .user-list li {  grid-template-columns: 40% 40% 10% 10% ;
+  } }
+
+  @media screen and (max-width: 767px) {
+
+    .container {
+      width: 84%;
+      padding: 10px 10px ;
+    }
+    
+    .user-list li {
+    grid-template-columns: 30% 20% 25% 25% ;
+  } }
+
+.user-list li:last-child {
+  border-bottom: none;
+}
+
+.user-list button {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.user-list .edit {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.user-list .edit:hover {
+  background-color: #e0a800;
+}
+
+.user-list .delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.user-list .delete:hover {
+  background-color: #c82333;
+}
