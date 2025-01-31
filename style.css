@@ -8,7 +8,7 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 10px 15px ;
+  padding: 10px 15px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
@@ -58,25 +58,28 @@ h1 {
   border-bottom: 1px solid #ccc;
 }
 
-  @media screen and (min-width: 768px) {
-    .container {
-      width: 80%;
-      padding: 10px 15px ;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 10px 15px;
+  }
 
-    .user-list li {  grid-template-columns: 40% 40% 10% 10% ;
-  } }
+  .user-list li {
+    grid-template-columns: 48% 32% 10% 10%;
+  }
+}
 
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
-    .container {
-      width: 84%;
-      padding: 10px 10px ;
-    }
-    
-    .user-list li {
-    grid-template-columns: 30% 20% 25% 25% ;
-  } }
+  .container {
+    width: 84%;
+    padding: 10px 10px;
+  }
+
+  .user-list li {
+    grid-template-columns: 40% 20% 20% 20%;
+  }
+}
 
 .user-list li:last-child {
   border-bottom: none;
